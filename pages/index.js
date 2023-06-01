@@ -9,7 +9,7 @@ const index = () => {
   const { ref: heroRef, inView } = useInView();
 
   const [selected, setSelected] = useState('home');
-
+ /*
   const galleryRef = useRef();
 
   useEffect(() => {
@@ -29,11 +29,12 @@ const index = () => {
     observer.observe(galleryRef.current)
     return () => observer.disconnect()
   }, []);
+  */
 
   return (
     <>
-      <HeroSection setSelected={setSelected} heroRef={heroRef} galleryRef={galleryRef}/>
-      <MainSection selected={selected} setSelected={setSelected} inView={inView} galleryRef={galleryRef} />
+      <HeroSection setSelected={setSelected} heroRef={heroRef} />
+      <MainSection selected={selected} setSelected={setSelected} inView={inView}/>
     </>
   )
 }

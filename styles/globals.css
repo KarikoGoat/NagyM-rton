@@ -96,6 +96,27 @@ body {
     to { opacity: 1 }
 }
 
+.fadeInRight{ animation-name: fadeInRight }
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    to { opacity: 1 }
+}
+
+.fadeOutRight{ animation-name: fadeOutRight }
+@keyframes fadeOutRight {
+    from {
+        opacity: 1;
+    }
+    to { 
+        opacity: 0;
+        transform: translateX(100%);
+    }
+}
+
+
 .slick-slide {
     display: flex;
     justify-content: center;

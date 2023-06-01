@@ -8,9 +8,10 @@ module.exports = {
     extend: {
       backgroundImage: {
         'background': "url('../public/background.svg')",
-        'background2': "url('../public/sz6.jpg')",
+        'background2': "url('../public/formb.png')",
         'background3': "url('../public/g5.jpg')",
         'background4': "url('../public/u6.jpg')",
+        'background5': "url('../public/g6.jpg')",
         'leftArrow': "url('../public/leftArrow.svg')",
         'rightArrow': "url('../public/rightArrow.svg')",
       },

@@ -43,7 +43,7 @@ const settings = {
 const PrevArrow = (props) => {
   const { onClick } = props;
   return (
-    <div className='absolute top-1/2 -left-10 cursor-pointer' onClick={onClick}>
+    <div className='hidden md:block absolute top-1/2 -left-10 cursor-pointer' onClick={onClick}>
       <Image src={leftArrow} />
     </div>
   );
@@ -52,7 +52,7 @@ const PrevArrow = (props) => {
 const NextArrow = (props) => {
   const { onClick } = props;
   return (
-    <div className='absolute top-1/2 -right-10 cursor-pointer' onClick={onClick}>
+    <div className='hidden md:block absolute top-1/2 -right-10 cursor-pointer' onClick={onClick}>
       <Image src={rightArrow} />
     </div>
   );
@@ -60,8 +60,8 @@ const NextArrow = (props) => {
 
 const Gallery = (props) => {
   return (
-    <div className='mt-72 block my-72 mx-16 md:mx-24'>   
-      <div className='relative -top-56' ref={props.galleryRef}></div>
+    <div className='mt-72 block my-72 mx-2 md:mx-24'>   
+      <div className='relative -top-56'></div>
       <h1 className='text-center text-white text-3xl mb-28 m-10'>Szárnyas Kapuk</h1>
       <Slider {...settings} prevArrow={<PrevArrow />} nextArrow={<NextArrow />}>
         <div>

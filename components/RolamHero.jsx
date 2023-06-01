@@ -8,7 +8,7 @@ const HeroSection = (props) => {
   return (
     <div className='bg-background3 w-full h-screen bg-cover bg-center' ref={props.heroRef}>
       <MainNavbar galleryRef={props.galleryRef}/>
-      <div className={`absolute z-40 flex flex-col space-y-12 top-1/3 w-full right-1/2mx-12 mt- items-center cssanimation sequence fadeInBottom
+      <div className={`absolute z-20 flex flex-col top-80  space-y-12  w-full items-center cssanimation sequence fadeInBottom
       text-center text-white text-5xl`}>
         <h1>Rólam</h1>
       </div>

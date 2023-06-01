@@ -1,5 +1,5 @@
 import React from 'react'
-import Hero2 from '../components/Hero2';
+import KepekHero from '../components/KepekHero';
 import GallerySection from '../components/GallerySection';
 import { useInView } from 'react-intersection-observer';
 
@@ -11,7 +11,7 @@ const kepek = () => {
 
   return (
     <>
-    <Hero2 heroRef={heroRef}  />
+    <KepekHero heroRef={heroRef}  />
     <GallerySection inView={inView}/>
     </>
   )

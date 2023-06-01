@@ -1,5 +1,5 @@
 import React from 'react'
-import Hero4 from '../components/Hero4';
+import KapcsolatHero from '../components/KapcsolatHero';
 import MainSection from '../components/MainSection';
 import { useInView } from 'react-intersection-observer';
 
@@ -11,7 +11,7 @@ const kepek = () => {
 
   return (
     <>
-    <Hero4 heroRef={heroRef}  />
+    <KapcsolatHero heroRef={heroRef}  />
     <MainSection inView={inView}/>
     </>
   )
