@@ -21,7 +21,7 @@ const HeroSection = (props) => {
         }</h1>
       </div>
     
-      <div className='bg-black opacity-50 absolute top-[60px] right-0 left-0 bottom-0 z-0'>h</div>
+      <div className='bg-black opacity-50 absolute top-16 md:top-[92px] right-0 left-0 bottom-0 z-0'>h</div>
     </div>
   )
 }

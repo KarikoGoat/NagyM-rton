@@ -37,12 +37,12 @@ const MainNavbar = (props) => {
       <div className={'hidden md:block bg-[#C79753] px-20 py-1 '}>
         <div className={"flex item-center justify-center gap-10"}>
           <div className={"flex gap-2"}>
-            <Image src={phone}></Image>
+            <Image src={phone} alt="Telefon ikon"></Image>
             <p>+36 30 415 9893</p>
           </div>
           <div className={""}>|</div>
           <div className={"flex gap-2"}>
-            <Image src={email}></Image>
+            <Image src={email } alt="E-mail ikon"></Image>
             <p>botos.karoly66@gmail.com</p>
           </div>
         </div>
@@ -56,15 +56,12 @@ const MainNavbar = (props) => {
             <Link href={"/kepek"} className={`text-sm text-l hover:text-[#C79753] p-1 ${pathname === '/kepek' ? 'text-[#C79753]' : 'text-white' }`} >
               KÉPEK
             </Link>
-            <Link href={"/kapcsolat"} className={`text-sm text-l hover:text-[#C79753] p-1 ${pathname === '/kapcsolat' ? 'text-[#C79753]' : 'text-white' }`}>
-              KAPCSOLAT
-            </Link>
             <div>
               <button ref={buttonRef} className="text-white" onClick={handleDropdownClick}>
                 <div className="flex space-x-1 text-sm">
                   <div>TERMÉKEK</div>  
-                  <Image className={`${dropdownIsOpen ? "hidden" : "block" }`} src={down}/> 
-                  <Image className={`${dropdownIsOpen ? "block" : "hidden" }`} src={up}/> 
+                  <Image className={`${dropdownIsOpen ? "hidden" : "block" }`} src={down} alt="Lefele mutató nyíl"/> 
+                  <Image className={`${dropdownIsOpen ? "block" : "hidden" }`} src={up} alt="Felfele mutató nyíl"/> 
                 </div>
               </button>
               <Dropdown buttonRef={buttonRef} dropdownIsOpen={dropdownIsOpen} setDropdownIsOpen={setDropdownIsOpen} />
@@ -73,10 +70,10 @@ const MainNavbar = (props) => {
           
         </div>
       </div> 
-      <div class="absolute block md:hidden bg-#0E161D py-4 bg-[#0E161D] px-16 z-40 w-full">
+      <div className="absolute block md:hidden bg-#0E161D py-4 bg-[#0E161D] px-16 z-40 w-full">
         <div className='flex  justify-end'>
-          <button class="block focus:outline-none z-40" onClick={handleClick}>
-            <svg class="h-8 w-8 fill-current text-white" viewBox="0 0 24 24">
+          <button className="block focus:outline-none z-40" onClick={handleClick}>
+            <svg className="h-8 w-8 fill-current text-white" viewBox="0 0 24 24">
               <path d="M2 6h20v3H2zm0 5h20v3H2zm0 5h20v3H2z" />
             </svg>
           </button>
@@ -89,14 +86,11 @@ const MainNavbar = (props) => {
         <Link href={"/kepek"} className={`text-sm text-l hover:text-[#C79753] p-1 ${pathname === '/kepek' ? 'text-[#C79753]' : 'text-white' }`} >
           KÉPEK
         </Link>
-        <Link href={"/kapcsolat"} className={`text-sm text-l hover:text-[#C79753] p-1 ${pathname === '/kapcsolat' ? 'text-[#C79753]' : 'text-white' }`}>
-          KAPCSOLAT
-        </Link>
         <button className="text-white" onClick={handleDropdownClickSM}>
           <div className="flex space-x-1 text-sm">
             <div>TERMÉKEK</div>  
-            <Image className={`${dropdownSMIsOpen ? "hidden" : "block" }`} src={down}/> 
-            <Image className={`${dropdownSMIsOpen ? "block" : "hidden" }`} src={up}/> 
+            <Image className={`${dropdownSMIsOpen ? "hidden" : "block" }`} src={down} alt="Lefele mutató nyíl"/> 
+            <Image className={`${dropdownSMIsOpen ? "block" : "hidden" }`} src={up} alt="Felfele mutató nyíl"/> 
           </div>
         </button>
       <DropdownSM buttonRef={buttonRef} dropdownIsOpen={dropdownSMIsOpen} setDropdownIsOpen={setDropdownSMIsOpen}/>

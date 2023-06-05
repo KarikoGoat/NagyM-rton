@@ -31,7 +31,7 @@ const MyTextArea = ({ label, ...props }) => {
 };
 
 
-const Footer = () => {
+const Footer = (props) => {
 
   const router = useRouter()
   const pathname = router.pathname
@@ -46,7 +46,6 @@ const Footer = () => {
             </div>
             <Link href={"/"} className={`text-sm hover:text-[#C79753] ${pathname === '/' ? 'text-[#C79753]' : 'text-white' }`}>Főoldal</Link>
             <Link href={"/kepek"} className={`text-sm hover:text-[#C79753] ${pathname === '/kepek' ? 'text-[#C79753]' : 'text-white' }`}>Képek</Link>
-            <Link href={"/kapcsolat"} className={`text-sm hover:text-[#C79753] ${pathname === '/kapcsolat' ? 'text-[#C79753]' : 'text-white' }`}>Kapcsolat</Link>
           </div>
           <div className='flex flex-col items-center md:items-start  space-y-6 md:space-y-10'>
             <div className={`text-xl md:mb-5 text-white`}>
@@ -65,11 +64,11 @@ const Footer = () => {
               Kapcsolat
             </div>
             <div className={"flex gap-2"}>
-              <Image src={phone}></Image>
+              <Image src={phone} alt="Telefont abrázoló ikon"></Image>
               <p className="text-white text-sm">+36 30 415 9893</p>
             </div>
             <div className={"flex gap-2"}>
-              <Image src={email}></Image>
+              <Image src={email} alt="Levelet ábrázoló ikon"></Image>
               <p className="text-white text-sm">botos.karoly66@gmail.com</p>
             </div>
           </div>

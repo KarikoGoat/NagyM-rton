@@ -2,14 +2,24 @@ import React, { useEffect, useRef, useState } from 'react'
 import HeroSection from '../components/HeroSection';
 import MainSection from '../components/MainSection';
 import { useInView } from 'react-intersection-observer';
-
+import { useRouter } from 'next/router';
 
 const index = () => {
   
+  const router = useRouter();
+  const pathname = router.pathname;
+
   const { ref: heroRef, inView } = useInView();
 
-  const [selected, setSelected] = useState('home');
+  const formRef = useRef()
+  const executeScroll = () => {
+    if (pathname !== '/') {
+      router.push('/');
+    }
+    formRef.current.scrollIntoView({ behavior: 'smooth'});
+  }  
  /*
+
   const galleryRef = useRef();
 
   useEffect(() => {
@@ -33,8 +43,8 @@ const index = () => {
 
   return (
     <>
-      <HeroSection setSelected={setSelected} heroRef={heroRef} />
-      <MainSection selected={selected} setSelected={setSelected} inView={inView}/>
+      <HeroSection executeScroll={executeScroll} formRef={formRef} heroRef={heroRef}/>
+      <MainSection executeScroll={executeScroll} formRef={formRef} inView={inView} />
     </>
   )
 }

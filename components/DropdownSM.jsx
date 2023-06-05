@@ -26,8 +26,8 @@ const Dropdown = (props) => {
       <button className="text-white " onClick={handleDropdownClick}>
         <div className="flex text-sm space-x-1 ml-1">
           <div>Kapumozgató motorok</div>  
-          <Image className={`${dropdownIsOpen ? "hidden" : "block" }`} src={down}/> 
-          <Image className={`${dropdownIsOpen ? "block" : "hidden" }`} src={up}/> 
+          <Image className={`${dropdownIsOpen ? "hidden" : "block" }`} src={down} alt="Lefelé mutató nyíl"/> 
+          <Image className={`${dropdownIsOpen ? "block" : "hidden" }`} src={up} alt="Felfelé mutató nyíl"/> 
         </div>
       </button>
       <div className={`${dropdownIsOpen ? "block" : "hidden"} ml-5 mt-1 flex flex-col`}>

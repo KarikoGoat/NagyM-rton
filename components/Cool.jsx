@@ -20,7 +20,6 @@ const Cool = (props) => {
       divRef.current.classList.replace('hidden', 'fadeInBottom');
       setIsVisited(true);
     }
-    console.log(isVisited);
   }, [inView])
 
   return (
@@ -29,7 +28,7 @@ const Cool = (props) => {
       <div className='md:block flex flex-col items-center'>
         <div className="grid grid-cols-1 md:grid-rows-3 md:grid-cols-2 gap-20 items-center mx-24 my-32" ref={divRef}>
           <div className="flex flex-col items-center space-y-8 md:space-y-0 md:flex-row md:space-x-12">
-            <Image src={tools} width={100} height={100} />
+            <Image src={tools} width={100} height={100} alt="Csavarkulcsot és csavarhuzót ábrázoló ikon" />
             <div className="flex flex-col items-center md:items-start space-y-4 ">
               <h1 className="text-white text-center md:text-left text-xl ">GARANCIA</h1>
               <h1 className="text-white text-center md:text-left text-sm ">
@@ -39,7 +38,7 @@ const Cool = (props) => {
             </div>
           </div>
           <div className="flex flex-col items-center space-y-8 md:space-y-0 md:flex-row md:space-x-12">
-            <Image src={beninca} width={100} height={100} />
+            <Image src={beninca} width={100} height={100} alt="Beninca logót ábrázoló ikon"/>
             <div className="flex flex-col items-center md:items-start space-y-4 ">
               <h1 className="text-white text-center md:text-left text-xl">BENINCA</h1>
               <h1 className="text-white text-center md:text-left text-sm">
@@ -48,7 +47,7 @@ const Cool = (props) => {
             </div>
           </div>
           <div className="flex flex-col items-center space-y-8 md:space-y-0 md:flex-row md:space-x-12">
-            <Image src={shield} width={100} height={100} />
+            <Image src={shield} width={100} height={100} alt="Pajzsot ábrázoló ikon" />
             <div className="flex flex-col items-center md:items-start space-y-4 ">
               <h1 className="text-white text-center md:text-left text-xl ">MINŐSÉG</h1>
               <h1 className="text-white text-center md:text-left  text-sm">
@@ -57,7 +56,7 @@ const Cool = (props) => {
             </div>
           </div>
           <div className="flex flex-col items-center space-y-8 md:space-y-0 md:flex-row md:space-x-12">
-            <Image src={time} width={100} height={100} />
+            <Image src={time} width={100} height={100} alt="Homokórát ábrázoló ikon" />
             <div className="flex flex-col items-center md:items-start space-y-4">
               <h1 className="text-white text-center md:text-left text-xl ">TAPASZTALAT</h1>
               <h1 className="text-white text-center md:text-left text-sm">
@@ -66,7 +65,7 @@ const Cool = (props) => {
             </div>
           </div>
           <div className="flex flex-col items-center space-y-8 md:space-y-0 md:flex-row md:space-x-12">
-            <Image src={check} width={100} height={100} />
+            <Image src={check} width={100} height={100} alt="Pipát ábrázoló ikon"/>
             <div className="flex flex-col items-center md:items-start space-y-4 ">
               <h1 className="text-white text-center md:text-left text-xl ">TELJES KÖRŰ KIVITELEZÉS</h1>
               <h1 className="text-white text-center md:text-left text-sm">

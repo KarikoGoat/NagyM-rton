@@ -34,15 +34,15 @@ const Dropdown = (props) => {
  
   return (
     <div ref={menuRef} className={`${props.dropdownIsOpen ? "block" : "hidden"} 
-    flex flex-col top-24 border-t-2 top-12 border-[#C79753] text-white p-5 text-left pr-16 absolute z-50 bg-[#0E161D]`}>
+    flex flex-col top-[52px] border-t-2 top-12 border-[#C79753] text-white p-5 text-left pr-16 absolute z-50 bg-[#0E161D]`}>
       <Link href={"/garazskapumotor"} className={`text-sm text-l hover:text-[#C79753] p-1 ${pathname === '/garazskapumotor' ? 'text-[#C79753]' : 'text-white' }`} >
         Garázskapumozgató motorok
       </Link> 
       <button className="text-white text-sm" onClick={handleDropdownClick}>
         <div className="flex space-x-1 ml-1">
           <div>Kapumozgató motorok</div>  
-          <Image className={`${dropdownIsOpen ? "hidden" : "block" }`} src={down}/> 
-          <Image className={`${dropdownIsOpen ? "block" : "hidden" }`} src={up}/> 
+          <Image className={`${dropdownIsOpen ? "hidden" : "block" }`} src={down} alt="Lefele mutató nyíl"/> 
+          <Image className={`${dropdownIsOpen ? "block" : "hidden" }`} src={up} alt="Felfele mutató nyíl"/> 
         </div>
       </button>
       <div className={`${dropdownIsOpen ? "block" : "hidden"} ml-5 mt-1 flex flex-col`}>
